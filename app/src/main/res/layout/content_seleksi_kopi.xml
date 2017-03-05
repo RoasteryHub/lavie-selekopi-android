@@ -16,8 +16,7 @@
     <ImageView
         android:layout_width="350dp"
         android:layout_height="500dp"
+        android:layout_marginTop="60dp"
         android:id="@+id/image_view"
-        android:layout_gravity="center_horizontal"
-        android:layout_below="@+id/toolbar"
-        android:layout_marginTop="0dp"/>
+        android:layout_gravity="center_horizontal" />
 </RelativeLayout>

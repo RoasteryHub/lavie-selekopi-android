@@ -55,7 +55,7 @@ public class SeleksiKopi extends AppCompatActivity
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("http://192.168.43.79:8000/")
-                //.baseUrl("http://127.0.0.1:8000")
+                //.baseUrl("http://10.30.40.210:8000")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         service = retrofit.create(SeleKopiAPI.class);
@@ -162,19 +162,16 @@ public class SeleksiKopi extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_profile) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_upgrade) {
 
         } else if (id == R.id.nav_manage) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id==R.id.nav_logout){}
 
-        } else if (id == R.id.nav_send) {
-
-        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
