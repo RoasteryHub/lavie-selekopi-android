@@ -30,7 +30,9 @@ public class AppHelper {
         File file = new File(Environment.getExternalStorageDirectory() + File.separator + "image_kopi_temp.jpg");
         try {
             // delete previous file
-            if (file.exists()) file.delete();
+            if (file.exists()){
+                file.delete();
+            };
 
             file.createNewFile();
 
